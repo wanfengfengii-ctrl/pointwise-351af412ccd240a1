@@ -4,12 +4,23 @@
   "setup": [],
   "verify": [
     "python3",
-    "checks.py",
-    "normal"
+    "-I",
+    "analysis.py",
+    "verify",
+    "data/incident.json"
   ],
   "demo": [
     "python3",
-    "checks.py",
-    "demo"
+    "-I",
+    "analysis.py",
+    "demo",
+    "data/incident.json"
+  ],
+  "run": [
+    "python3",
+    "-I",
+    "analysis.py",
+    "run",
+    "data/incident.json"
   ]
 }
